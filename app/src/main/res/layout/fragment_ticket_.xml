@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ticket_Fragment">
+
+    <TextView
+        android:id="@+id/tvApellidoT"
+        android:layout_width="86dp"
+        android:layout_height="28dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="52dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNombreT"
+        android:layout_width="104dp"
+        android:layout_height="26dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTicket"
+        android:layout_width="411dp"
+        android:layout_height="334dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="124dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

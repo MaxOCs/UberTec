@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_ubertec"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="mx.tecnm.lapaz.ubertec.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registro"
+            app:destination="@id/registro" />
+        <action
+            android:id="@+id/action_loginFragment_to_ubi"
+            app:destination="@id/ubi" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="mx.tecnm.lapaz.ubertec.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_platillosFragment"
+            app:destination="@id/platillosFragment" />
+        <argument
+            android:name="usuario"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_menuFragment_to_comprados"
+            app:destination="@id/comprados" />
+        <action
+            android:id="@+id/action_menuFragment_to_carrito"
+            app:destination="@id/carrito" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordenFragment"
+        android:name="mx.tecnm.lapaz.ubertec.OrdenFragment"
+        android:label="fragment_orden"
+        tools:layout="@layout/fragment_orden" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="idusuario"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_ordenFragment_to_carrito"
+            app:destination="@id/carrito" />
+    </fragment>
+    <fragment
+        android:id="@+id/platillosFragment"
+        android:name="mx.tecnm.lapaz.ubertec.PlatillosFragment"
+        android:label="fragment_platillos"
+        tools:layout="@layout/fragment_platillos" >
+        <action
+            android:id="@+id/action_platillosFragment_to_ordenFragment"
+            app:destination="@id/ordenFragment" />
+        <argument
+            android:name="categoria"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="mx.tecnm.lapaz.ubertec.Registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registro_self"
+            app:destination="@id/registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/carrito"
+        android:name="mx.tecnm.lapaz.ubertec.Carrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" >
+        <action
+            android:id="@+id/action_carrito_to_ticket_Fragment"
+            app:destination="@id/ticket_Fragment" />
+        <action
+            android:id="@+id/action_carrito_to_comprados"
+            app:destination="@id/comprados" />
+        <argument
+            android:name="cantidad"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticket_Fragment"
+        android:name="mx.tecnm.lapaz.ubertec.Ticket_Fragment"
+        android:label="fragment_ticket_"
+        tools:layout="@layout/fragment_ticket_" />
+    <fragment
+        android:id="@+id/comprados"
+        android:name="mx.tecnm.lapaz.ubertec.Comprados"
+        android:label="fragment_comprados"
+        tools:layout="@layout/fragment_comprados" >
+        <action
+            android:id="@+id/action_comprados_to_pantallaresena"
+            app:destination="@id/pantallaresena" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaresena"
+        android:name="mx.tecnm.lapaz.ubertec.pantallaresena"
+        android:label="fragment_pantallaresena"
+        tools:layout="@layout/fragment_pantallaresena" />
+    <fragment
+        android:id="@+id/ubi"
+        android:name="mx.tecnm.lapaz.ubertec.ubi"
+        android:label="fragment_ubi"
+        tools:layout="@layout/fragment_ubi" />
+</navigation>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdenFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResenaRV"
+        android:layout_width="402dp"
+        android:layout_height="314dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <ImageView
+        android:id="@+id/ivImagenD"
+        android:layout_width="207dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvPrecioD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="62dp"
+        android:text="Precio"
+        app:layout_constraintEnd_toStartOf="@+id/ivImagenD"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombreP"
+        android:layout_width="108dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:text="NombrePlatillo"
+        app:layout_constraintEnd_toStartOf="@+id/ivImagenD"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDetalles"
+        android:layout_width="141dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="62dp"
+        android:text="Detalles"
+        app:layout_constraintEnd_toStartOf="@+id/ivImagenD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="164dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="32dp"
+        android:text="Agregar"
+        app:icon="@drawable/mass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="276dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRestar"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="224dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="332dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="104dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="RESEÑAS:"
+        android:textColor="#1429FF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.058" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

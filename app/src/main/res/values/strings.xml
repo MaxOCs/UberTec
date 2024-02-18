@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UberTec</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menuUbicacion">Ubicación</string>
+    <string name="menuAcercaDe">Acerca de...</string>
+    <string name="menuSistema">Sistema</string>
+    <string name="menuImagen">Imagen</string>
+    <string name="menuTema">Tema</string>
+    <string name="action_favorite">favorito</string>
+</resources>
